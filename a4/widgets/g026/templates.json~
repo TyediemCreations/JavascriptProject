@@ -1,0 +1,112 @@
+
+
+{
+	"baseHtml": [
+		"<div id='g026_chooser'>",
+			"<label>Include courses not yet completed: <input type='checkbox' id='g026_courseInclude'></label>",
+			"<p></p>",
+			"<label>Add Subject: <input type='text' id='g026_addSubject' size='5'></label>",
+			"<label>with Catalog: <input type='text' id='g026_addCatalog' size='5'/></label>",
+			"<button id='g026_add'>Add</button>",
+			"<p></p>",
+			"<label>Remove Subject: <input type='text' id='g026_rmSubject' size='5'></label>",
+			"<label>with Catalog: <input type='text' id='g026_rmCatalog' size='5'/></label>",
+			"<button id='g026_rm'>Rm</button>",
+			"<p></p>",
+			"<button id='g026_reset'>Reset to Default</button>",
+			"<br><br><br>",
+		"</div>",
+		"<div id='g026_cDescr'></div>"
+	],
+
+	"bio":	"<h4 align = 'center'>{{bio.firstName}} {{bio.lastName}}'s Required Courses</h4>",
+
+	"coursesAdded": [
+		"<p>Hello</p>",
+		"<ul>{{#courses}}Courses Added:",
+			"<li> {{subjectCode}} {{catalog}} {{courseGrade}}", 
+        	"</li>",
+		"{{/courses}}</ul>"
+		],
+
+	"coursesD": [
+		"<ul>{{#courses}}",
+			"<li> {{term}} {{subjectCode}} {{catalog}} {{courseGrade}} ", 
+        	"</li>",
+		"{{/courses}}</ul>"
+		],
+	"requirement" : [
+
+
+		"<div style='width:50%;float:left;'>",
+		"<p><b>Courses Added:</b></p>",
+		"<ul>{{#addedCourses}}",
+			"<li> <button id='g026_rm0'>Rm</button> {{subjectCode}} {{catalog}} ", 
+        	"</li>",
+		"{{/addedCourses}}</ul>",
+
+		"</div>",
+
+		"<div style='width:50%;float:left;'>",
+		
+			"<p>Total required units left: {{unitsLeft.totalLeft}}</p>", 
+        		
+					"<ul>CS units left: {{unitsLeft.csLeft}}</ul>",   
+					"<ul>Math units left: {{unitsLeft.mathLeft}}</ul>",  
+					"<ul>Non-math units left: {{unitsLeft.nonmathLeft}}</ul>",   
+					"<ul>Elective units left: {{unitsLeft.electiveLeft}}</ul>",     				
+        		
+        	
+		
+		"<p>Required courses left:</p>",
+		"<ul>{{#everything}}",
+			"<li> {{subject}}", 
+        		"<ul>",
+					"{{catalog}}", 
+        				
+        		"</ul>",
+        	"</li>",
+		"{{/everything}}</ul>",
+
+		"<ul> {{#additional2}}",
+			"<li> {{reqnum}} {{subject}} {{reqmin}}-{{reqmax}}, {{reqmin2}}-{{reqmax2}}",
+		"</li>",
+		"{{/additional2}}</ul>",
+
+		"<ul> {{#additional}}",
+			"<li> {{reqnum}} {{subject}} {{reqmin}}-{{reqmax}}",
+		"</li>",
+		"{{/additional}}</ul>",
+
+		"<ul>{{#additional3}}",
+			"<li>{{description}}",
+			"{{#courses}}", 
+        		"<ul>",
+					"{{subject}} {{catalog}}{{reqmin}}{{dashLine}}{{reqmax}}", 
+        				
+        		"</ul>",
+			"{{/courses}}</li>",
+        	
+		"{{/additional3}}</li></ul>",
+
+		"<ul>{{#additional4}}",
+			"<li>{{description1}} {{reqnum}} {{description2}}", 
+			"{{#courses}}",
+        		"<ul>",
+					"{{subject}} {{catalog}}", 
+        				
+        		"</ul>",
+        		"{{/courses}}</li>",
+		"{{/additional4}}</li></ul>",
+
+		"<ul>{{#breadth}}",
+			"<li> {{reqnum}} {{name}} credits left", 
+        	"</li>",
+		"{{/breadth}}</ul>",
+		"<ul>{{#depth}}",
+			"<li> {{reqnum1}} {{description1}} {{reqThirdYear}} {{description2}} {{reqnum2}} {{description3}}", 
+        	"</li>",
+		"{{/depth}}</ul>",
+		"</div>"
+		]
+}
