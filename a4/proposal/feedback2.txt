@@ -1,5 +1,0 @@
-Good update to the proposal.
-
-The only concern I have with your project is that it is borderline in interactivity. I think this could be fixed if you could come up with some sort of widget to remove courses from the list, rather than re-typing them. However, I would save this kind of extension of the assignment to the end.
-
-25/25
