@@ -5,7 +5,7 @@
 		"<div id='g026_chooser'>",
 			"<label>Include courses not yet completed: <input type='checkbox' id='g026_courseInclude'></label>",
 			"<p></p>",
-			"<label>Add Subject: <input type='text' id='g026_addSubject' size='5'></label>",
+			"<label>&nbsp&nbsp&nbsp&nbsp&nbsp Add Subject: <input type='text' id='g026_addSubject' size='5'></label>",
 			"<label>with Catalog: <input type='text' id='g026_addCatalog' size='5'/></label>",
 			"<button id='g026_add'>Add</button>",
 			"<p></p>",
@@ -41,7 +41,7 @@
 		"<div style='width:50%;float:left;'>",
 		"<p><b>Courses Added:</b></p>",
 		"<ul>{{#addedCourses}}",
-			"<li> <button id='g026_rm0'>Rm</button> {{subjectCode}} {{catalog}} ", 
+			"<li>  {{subjectCode}} {{catalog}} ", 
         	"</li>",
 		"{{/addedCourses}}</ul>",
 
